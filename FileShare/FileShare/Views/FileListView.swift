@@ -10,7 +10,7 @@ import SwiftUI
 
 struct FileListView: View {
     
-    @ObservedObject var viewModel: FileShareViewModel
+    @Environment(FileShareViewModel.self) var viewModel
     
     var body: some View {
         Section {

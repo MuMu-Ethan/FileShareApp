@@ -10,8 +10,6 @@ public func configure(_ app: Application) async throws {
 
     app.databases.use(.sqlite(.file("db.sqlite")), as: .sqlite)
     
-    app.http.server.configuration.hostname = "192.168.1.7"
-
     app.routes.defaultMaxBodySize = "10gb"
     
     app.migrations.add(CreateFileData())

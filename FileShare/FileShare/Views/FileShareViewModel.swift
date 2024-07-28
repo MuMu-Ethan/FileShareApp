@@ -6,26 +6,24 @@
 //
 
 import SwiftUI
+import Observation
 
-
-class FileShareViewModel: ObservableObject {
+@Observable
+class FileShareViewModel {
     
-    static let url = "http://192.168.1.7:8080"
+    static let url = "http://127.0.0.1:8080"
     
-    @Published var files: [FileData] = []
-    @Published var deletedFile: FileData?
-    @Published var document: ExportDocument?
+    var files: [FileData] = []
+    var deletedFile: FileData?
+    var document: ExportDocument?
     
-    @Published var errorMessage = ""
-    @Published var showError = false
+    var errorMessage = ""
+    var showError = false
     
-    @Published var isImporting = false
-    @Published var isExporting = false
-    @Published var isDeletingAll = false
-    @Published var isDeletingFile = false
-    @Published var isRefreshing = false
-    
-    let importExportService = ImportExportService()
+    var isImporting = false
+    var isExporting = false
+    var isDeletingAll = false
+    var isRefreshing = false
     
     let fetchService = FetchFileService()
     let uploadService = UploadFileService()
@@ -84,25 +82,6 @@ class FileShareViewModel: ObservableObject {
                 self.errorMessage = "Failed to delete file: \(error.localizedDescription)"
                 self.showError = true
             }
-        }
-    }
-    
-    func handleImport(result: Result<URL, Error>) {
-        do {
-            try importExportService.handleImport(result: result, uploadFile: self.uploadFile)
-        } catch {
-            self.errorMessage = "Failed to upload file: \(error.localizedDescription)"
-            self.showError = true
-        }
-    }
-    
-    
-    func handleExport(result: Result<URL, Error>) {
-        do {
-            try importExportService.handleExport(result: result)
-        } catch {
-            self.errorMessage = "Failed to download file: \(error.localizedDescription)"
-            self.showError = true
         }
     }
 }

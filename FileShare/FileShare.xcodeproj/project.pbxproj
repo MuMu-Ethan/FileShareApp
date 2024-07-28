@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41F28CF2C50C5AB00CC5C63 /* DeleteAllButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41F28CE2C50C5AB00CC5C63 /* DeleteAllButton.swift */; };
 		B4A5B7C02C1579140037A5AB /* FileShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7BF2C1579140037A5AB /* FileShareApp.swift */; };
 		B4A5B7C22C1579140037A5AB /* FileShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7C12C1579140037A5AB /* FileShareView.swift */; };
 		B4A5B7C42C1579230037A5AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A5B7C32C1579230037A5AB /* Assets.xcassets */; };
@@ -16,14 +17,15 @@
 		B4A5B7D52C157A0B0037A5AB /* UploadFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7D42C157A0B0037A5AB /* UploadFileService.swift */; };
 		B4A5B7D72C157AAC0037A5AB /* FileShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7D62C157AAC0037A5AB /* FileShareViewModel.swift */; };
 		B4A5B7D92C159A340037A5AB /* FileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7D82C159A330037A5AB /* FileDocument.swift */; };
-		B4A5B7E62C1746B40037A5AB /* ImportExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7E52C1746B30037A5AB /* ImportExportService.swift */; };
 		B4A5B7E82C19BBC00037A5AB /* DeleteAllFilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7E72C19BBC00037A5AB /* DeleteAllFilesService.swift */; };
 		B4A5B7EA2C19D27E0037A5AB /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7E92C19D27E0037A5AB /* FileListView.swift */; };
 		B4A5B7EC2C19D5820037A5AB /* ImportExportViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5B7EB2C19D5820037A5AB /* ImportExportViewModifier.swift */; };
 		B4D5D7512C1EACDB00FDFF03 /* DeleteFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D5D7502C1EACDB00FDFF03 /* DeleteFileService.swift */; };
+		B4E499112C4FF48900BD3E20 /* ToolbarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E499102C4FF48900BD3E20 /* ToolbarButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B41F28CE2C50C5AB00CC5C63 /* DeleteAllButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllButton.swift; sourceTree = "<group>"; };
 		B4A5B7BC2C1579140037A5AB /* FileShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A5B7BF2C1579140037A5AB /* FileShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareApp.swift; sourceTree = "<group>"; };
 		B4A5B7C12C1579140037A5AB /* FileShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareView.swift; sourceTree = "<group>"; };
@@ -35,11 +37,11 @@
 		B4A5B7D42C157A0B0037A5AB /* UploadFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileService.swift; sourceTree = "<group>"; };
 		B4A5B7D62C157AAC0037A5AB /* FileShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareViewModel.swift; sourceTree = "<group>"; };
 		B4A5B7D82C159A330037A5AB /* FileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocument.swift; sourceTree = "<group>"; };
-		B4A5B7E52C1746B30037A5AB /* ImportExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportService.swift; sourceTree = "<group>"; };
 		B4A5B7E72C19BBC00037A5AB /* DeleteAllFilesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllFilesService.swift; sourceTree = "<group>"; };
 		B4A5B7E92C19D27E0037A5AB /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
 		B4A5B7EB2C19D5820037A5AB /* ImportExportViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportViewModifier.swift; sourceTree = "<group>"; };
 		B4D5D7502C1EACDB00FDFF03 /* DeleteFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFileService.swift; sourceTree = "<group>"; };
+		B4E499102C4FF48900BD3E20 /* ToolbarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +74,8 @@
 		B4A5B7BE2C1579140037A5AB /* FileShare */ = {
 			isa = PBXGroup;
 			children = (
-				B4A5B7E22C17161F0037A5AB /* ViewModels */,
-				B4A5B7DA2C15B79A0037A5AB /* Views */,
 				B4A5B7BF2C1579140037A5AB /* FileShareApp.swift */,
+				B4A5B7DA2C15B79A0037A5AB /* Views */,
 				B4A5B7CE2C1579960037A5AB /* Models */,
 				B4A5B7CF2C1579A60037A5AB /* Services */,
 				B4A5B7C32C1579230037A5AB /* Assets.xcassets */,
@@ -106,7 +107,6 @@
 			children = (
 				B4A5B7D22C1579F60037A5AB /* FetchFileService.swift */,
 				B4A5B7D42C157A0B0037A5AB /* UploadFileService.swift */,
-				B4A5B7E52C1746B30037A5AB /* ImportExportService.swift */,
 				B4A5B7E72C19BBC00037A5AB /* DeleteAllFilesService.swift */,
 				B4D5D7502C1EACDB00FDFF03 /* DeleteFileService.swift */,
 			);
@@ -120,15 +120,10 @@
 				B4A5B7C12C1579140037A5AB /* FileShareView.swift */,
 				B4A5B7E92C19D27E0037A5AB /* FileListView.swift */,
 				B4A5B7EB2C19D5820037A5AB /* ImportExportViewModifier.swift */,
+				B4E499102C4FF48900BD3E20 /* ToolbarButtons.swift */,
+				B41F28CE2C50C5AB00CC5C63 /* DeleteAllButton.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		B4A5B7E22C17161F0037A5AB /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +154,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					B4A5B7BB2C1579140037A5AB = {
 						CreatedOnToolsVersion = 15.3;
@@ -201,12 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A5B7E62C1746B40037A5AB /* ImportExportService.swift in Sources */,
 				B4A5B7E82C19BBC00037A5AB /* DeleteAllFilesService.swift in Sources */,
 				B4A5B7C22C1579140037A5AB /* FileShareView.swift in Sources */,
 				B4A5B7C02C1579140037A5AB /* FileShareApp.swift in Sources */,
 				B4A5B7D32C1579F60037A5AB /* FetchFileService.swift in Sources */,
+				B41F28CF2C50C5AB00CC5C63 /* DeleteAllButton.swift in Sources */,
 				B4A5B7EC2C19D5820037A5AB /* ImportExportViewModifier.swift in Sources */,
+				B4E499112C4FF48900BD3E20 /* ToolbarButtons.swift in Sources */,
 				B4D5D7512C1EACDB00FDFF03 /* DeleteFileService.swift in Sources */,
 				B4A5B7D12C1579D30037A5AB /* FileData.swift in Sources */,
 				B4A5B7EA2C19D27E0037A5AB /* FileListView.swift in Sources */,
@@ -253,6 +249,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -314,6 +311,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -341,6 +339,7 @@
 				CODE_SIGN_ENTITLEMENTS = FileShare/FileShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FileShare/Preview Content\"";
 				DEVELOPMENT_TEAM = 5QG8T9G437;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -356,10 +355,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethanli.FileShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +378,7 @@
 				CODE_SIGN_ENTITLEMENTS = FileShare/FileShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FileShare/Preview Content\"";
 				DEVELOPMENT_TEAM = 5QG8T9G437;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -394,10 +394,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethanli.FileShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
